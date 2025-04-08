@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu's Portfolio Website</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    
+</head>
+<body>
+    <header id="header" role="banner">
+        <nav aria-label="Main Navigation">
+            <div class="left">
+                <a href="/" aria-label="Homepage">YWL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="right" id="nav-links">
+                <a href="/#about_me">About Me</a>
+                <a href="/projects">Projects Showcase</a>
+                <a href="/contact">Contact</a>
+                <a href="/blog">Experiences</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="about_me" role="region" aria-labelledby="about_me_heading">
+            <h1 id="about_me_heading">About Me</h1>
+            <img id="mypic" src="/images/Fun Photo.JPG" alt="Portrait of Yu Waddy Lwin">
+            <div id="section1">
+                <h2 class="intro">Hey! I'm</h2>
+                <h2>Yu Waddy Lwin</h2>
+                <p><em>Second-Year Computer Science Student</em></p>
+                <p>I have experience with Python, HTML, CSS, JavaScript, and Database SQL. Currently working on Node.js and Express.js.</p>
+                <div aria-label="Social Links">
+                    <a id="github_icon" href="https://github.com/yuwaddylwin" target="_blank" aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a id="linkedin_icon" href="https://www.linkedin.com/in/yuwaddylwin" target="_blank" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a id="insta_icon" href="https://www.instagram.com/yuwaddyl_win/profilecard/?igsh=eXdtb3ByYTBnY3lw" target="_blank" aria-label="Instagram Profile">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>

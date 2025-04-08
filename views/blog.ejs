@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Yu's Portfolio</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+
+</head>
+<body>
+    <header id="header" role="banner">
+        <nav aria-label="Main Navigation">
+            <div class="left">
+                <a href="/" aria-label="Homepage">YWL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="right" id="nav-links">
+                <a href="/#about_me">About Me</a>
+                <a href="/projects">Projects Showcase</a>
+                <a href="/contact">Contact</a>
+                <a href="/blog">Experiences</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="blog_section" role="region" aria-labelledby="blog_heading">
+            <h1 id="blog_heading">My Learning Journey <i class="fa-solid fa-rocket" aria-hidden="true"></i></h1>
+            
+            <% blogPosts.forEach(post => { %>
+                <article class="blog-post">
+                    <h2><%= post.title %></h2>
+                    <p class="post-date"><%= post.date %></p>
+                    <p><%= post.content %></p>
+                </article>
+            <% }); %>
+
+            <article class="blog-post">
+                <p>I began my programming journey right after graduating from high school. My first step into this exciting world was enrolling in <a href="https://cs50.harvard.edu/python/" target="_blank" aria-label="CS50 Python Course">Harvard's CS50 Python course</a>. It was a fantastic introduction that gave me a solid foundation, and I spent countless hours solving problem sets, which helped me sharpen my problem-solving skills.</p>
+                <p>When I joined university, I quickly realized that learning programming goes far beyond attending lectures and completing small projects. <span class="highlight">True mastery comes from hands-on experience and working on multiple projects.</span> Each project taught me something new and deepened my understanding of programming concepts.</p>
+                <ul>
+                    <li><strong>Databases</strong>: I learned how databases work and understood their critical role in organizing and managing data effectively. This knowledge opened my eyes to the importance of data in almost every field today.</li>
+                    <li><strong>Data Structures and Algorithms</strong>: This subject challenged my logical thinking and problem-solving abilities. It taught me how to write efficient and optimized code—a skill essential for any programmer.</li>
+                    <li><strong>Blockchain Technology</strong>: Understanding how blockchain works was both fascinating and eye-opening. It's incredible to see how this technology is revolutionizing industries and shaping the future.</li>
+                    <li><strong>Mathematics</strong>: Programming and math go hand in hand. I've worked through various mathematical concepts that have strengthened my ability to write better algorithms and solve complex problems.</li>
+                </ul>
+                <blockquote>
+                    "Currently, I am exploring the world of Web Development. Learning HTML, CSS, and JavaScript has been exciting as well as Node.js and Express.js."
+                </blockquote>
+                <p>This journey hasn't been easy, but it has been incredibly rewarding. Each step, from Python to web development, has shaped my skills and given me confidence. I know there is much more to learn, and I am ready to face the challenges ahead. Because in the end, I believe in myself, and I know I can do this.</p>
+            </article>
+        </section>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>

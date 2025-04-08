@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Yu's Portfolio</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+</head>
+<body>
+    <header id="header" role="banner">
+        <nav aria-label="Main Navigation">
+            <div class="left">
+                <a href="/" aria-label="Homepage">YWL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="right" id="nav-links">
+                <a href="/#about_me">About Me</a>
+                <a href="/projects">Projects Showcase</a>
+                <a href="/contact">Contact</a>
+                <a href="/blog">Experiences</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="contact_section" role="form" aria-labelledby="contact_heading">
+            <div id="success-message" class="success-message" style="display: none;">
+                Thank you! I will get back to you soon.
+            </div>
+            <h1 id="contact_heading">Contact Me</h1>
+            <% if (message) { %>
+                <div class="success-message"><%= message %></div>
+            <% } %>
+            <form id="contact-form" action="/contact" method="POST" aria-describedby="contact_form_desc">
+                <input type="text" id="name" name="name" placeholder="Name">
+                <div id="name-error" class="error-message" style="display: none; color: red;"></div>
+                
+                <input type="email" id="email" name="email" placeholder="Email">
+                <div id="email-error" class="error-message" style="display: none; color: red;"></div>
+                
+                <textarea id="message" name="message" placeholder="Your message"></textarea>
+                <div id="message-error" class="error-message" style="display: none; color: red;"></div>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>
