@@ -266,10 +266,10 @@ section:hover {
 }
 
 #projects_showcase article img {
-    width: 350px;
+    width: 400px;
     height: auto;
     border-radius: 8px;
-    object-fit: cover;
+    object-fit:fill;
     transition: var(--transition);
 }
 

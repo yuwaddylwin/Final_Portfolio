@@ -16,20 +16,27 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const projects = [
   {
     id: 1,
+    title: "Health Care Management System",
+    description: "A simple web-based, responsive website 'Health Care Management System' built using HTML, CSS, JavaScript, Node.js, and Express.js. The system allows management of patients, employees, appointments, medical records, and health tips. Data is stored and retrieved using a structured data.json file, enabling easy access and updates.",
+    image: "/images/HCMS.png",
+    link: "https://github.com/yuwaddylwin/HealthCare-System"
+  },
+  {
+    id: 2,
     title: "Student Management System",
     description: "Python Project manages student records using a CSV file. It allows you to display all students, add new entries, search for specific students, update existing records, delete unwanted entries, and exit the program seamlessly.",
     image: "/images/Python_project.png",
     link: "https://github.com/yuwaddylwin/Assignment/tree/fa70483ef4110149fb56dda8bfe2f0de0581e9ec/tem"
   },
   {
-    id: 2,
+    id: 3,
     title: "Online Shopping Database",
     description: "Designed and developed an Online Shopping Database in Microsoft Access, featuring fully integrated modules for customers, products, orders, payments, and shipping.",
     image: "/images/Database Project.png",
     link: "https://github.com/yuwaddylwin/Assignment/tree/6fdfa3eacf6cca144bca46a2030024e38dd2c5c9/Database"
   },
   {
-    id: 3,
+    id: 4,
     title: "Food Delivery System with Data Structures & Algorithms",
     description: "Developed a Food Delivery Management System using Binary Search Tree (BST) for efficient order management. The system allows adding, finding, updating, and canceling orders, supports online payments, and provides a smooth user experience with an intuitive exit feature.",
     image: "/images/Data Structure & Algorithms Project.png",
